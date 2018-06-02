@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <!-- Bootstrap core CSS -->
+    <script src="app/assets/vendor/jquery/jquery.min.js"></script>
+    <script src="app/assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet">
+    <!-- <link href="bootstrap.min.css" rel="stylesheet"> -->
+    <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous"> -->
+    <!-- <link href="app/assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet"> -->
+    <!-- Custom styles for this template -->
+    <link href="css/simple-sidebar.css" rel="stylesheet">
+    <link href="css/photo.css" rel="stylesheet">
+    <link href="css/shop.css" rel="stylesheet">
+<!-- 제이쿼리 앵커 스크롤 -->
+    <script type="text/javascript" src="http://code.jquery.com/jquery-latest.js"></script>
+
+    <script>
+        function fnMove(seq){
+            var offset = $("#div" + seq).offset();
+            $('html, body').animate({scrollTop : offset.top}, 400);
+        }
+
+        var animateHTML = function () {
+  var elems,
+    windowHeight
+  var init = function () {
+    elems = document.getElementsByClassName('hidden')
+    windowHeight = window.innerHeight
+    _addEventHandlers()
+  }
+  var _addEventHandlers = function () {
+    window.addEventListener('scroll', _checkPosition)
+    window.addEventListener('resize', init)
+  }
+  var _checkPosition = function () {
+    for (var i = 0; i < elems.length; i++) {
+      var posFromTop = elems[i].getBoundingClientRect().top
+      if (posFromTop - windowHeight <= 0) {
+        elems[i].className = elems[i].className.replace('hidden', 'fade-in-element')
+      }
+    }
+  }
+  return {
+    init: init
+  }
+}
+animateHTML().init()
+
+      //   $('a.js-scroll-trigger[href*="#"]:not([href="#"])').click(function() {
+      //   if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
+      //     var target = $(this.hash);
+      //     target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+      //     if (target.length) {
+      //       $('html, body').animate({
+      //         scrollTop: (target.offset().top)
+      //       }, 1000, "easeInOutExpo");
+      //       return false;
+      //     }
+      //   }
+      // });
+    </script>
+</head>
+
+<body>
+    <div id="wrapper">
+        <!-- Sidebar -->
+        <div id="sidebar-wrapper">
+            <ul class="sidebar-nav">
+                <li class="sidebar-brand">
+                    <a href="#">
+                        <img id ="round_img" src='images/appleLogo.jpg'alt="afds">
+                    </a>
+                </li>
+                <li>
+                    <a href="javascript:void(0)" onclick="fnMove('1')"  >HOME</a>
+                    <!-- <button onclick="fnMove('1')">div1로 이동</button> -->
+                </li>
+                <li>
+                    <a href="javascript:void(0)" onclick="fnMove('2')"  >INTRODUCE</a>
+                </li>
+                <li>
+                    <a href="javascript:void(0)" onclick="fnMove('3')" >GALLERY</a>
+                </li>
+                <li>
+                    <a href="javascript:void(0)" onclick="fnMove('4')" >Product</a>
+                </li>
+            </ul>
+        </div>
+        <!-- /#sidebar-wrapper -->
+        <div class="container-fluid p-0">
+        <!-- Page Content -->
+        <section class="resume-section p-3 p-lg-5 d-flex d-column" id="div1">
+          <div class = "my-auto">
+            <!-- <div id="page-content-wrapper"> -->
+                <!-- <div class="container-fluid"> -->
+              <div class="subInfo">
+                    <!-- <a href="#menu-toggle" class="btn btn-secondary" id="menu-toggle">Toggle Menu</a> -->
+                <!-- </div> -->
+              </div>
+          </div>
+        </section>
+
+        <section class="resume-section p-3 p-lg-5 d-flex d-column" id="div2">
+          <div class = "my-auto">
+            <h2 class = "mb-5 sub_title">EDUCATION</h2>
+              <div class="resume-item d-flex flex-column flex-md-row mb-5">
+                <div class="resume-content mr-auto">
+                  <!-- <div id="page-content-wrapper"> -->
+                    <!-- <div class="container-fluid"> -->
+                      <h1>NAMSEOUL UNIVERSITY</h1>
+                      <div class="subheading mb-3">Computer Science</div>
+                </div>
+              <div class="resume-date text-md-right">
+                  <span class="date_color">2015.03.01 ~ ing</span>
+              </div>
+            </div>
+          </div>
+        </section>
+
+    <section class="resume-section p-3 p-lg-5 d-flex d-column" id="div3">
+      <!-- <div class = "my-auto"> -->
+        <!-- <div id="wrap"> -->
+              <div id="photo_wrapper">
+          	    <div class="container">
+          		    <div id="carousel1">
+              			<figure><img src="images/Iphone1.jpg" alt=""></figure>
+              			<figure><img src="images/Iphone2.jpg" alt=""></figure>
+              			<figure><img src="images/Iphone3.png" alt=""></figure>
+              			<figure><img src="images/Iphone4.png" alt=""></figure>
+              			<figure><img src="images/Iphone5.png" alt=""></figure>
+              			<figure><img src="images/Iphone6.png" alt=""></figure>
+              			<figure><img src="images/Iphone7.jpeg" alt=""></figure>
+              			<figure><img src="images/Iphone8.jpg" alt=""></figure>
+              			<figure><img src="images/Iphone9.jpg" alt=""></figure>
+              		</div>
+          		<div id="carousel2">
+                <figure><img src="images/macBook1.jpg" alt=""></figure>
+                <figure><img src="images/macBook10.jpg" alt=""></figure>
+                <figure><img src="images/macBook3.jpg" alt=""></figure>
+                <figure><img src="images/iMac4.jpg" alt=""></figure>
+                <figure><img src="images/iMac2.png" alt=""></figure>
+                <figure><img src="images/iMac3.jpeg" alt=""></figure>
+                <figure><img src="images/macBook8.jpg" alt=""></figure>
+                <figure><img src="images/macBook9.jpg" alt=""></figure>
+                <figure><img src="images/iMac6.jpg" alt=""></figure>
+          		</div>
+          		<div id="carousel3">
+          			<figure><img src="../images/19.jpg" alt=""></figure>
+          			<figure><img src="../images/20.jpg" alt=""></figure>
+          			<figure><img src="../images/21.jpg" alt=""></figure>
+          			<figure><img src="../images/22.jpg" alt=""></figure>
+          			<figure><img src="../images/23.jpg" alt=""></figure>
+          			<figure><img src="../images/24.jpg" alt=""></figure>
+          			<figure><img src="../images/25.jpg" alt=""></figure>
+          			<figure><img src="../images/26.jpg" alt=""></figure>
+          			<figure><img src="../images/27.jpg" alt=""></figure>
+          		</div>
+          	</div>
+              </div>
+              <!-- </div> -->
+            <!-- </div> -->
+          </section>
+<section class="resume-section p-3 p-lg-5 d-flex d-column hidden"  id="div4">
+  <!-- <div class = "my-auto"> -->
+      <!-- <div class = "productContainer"> -->
+    	 <aside class="product-card1">
+      <header>
+        <a target="_blank" href="#">
+        <img src="images/shopIphone.png"
+        ></a>
+        <h1>IPHONE X</h1>
+        <h2>ENJOY!!</h2>
+      </header>
+      <div class="product-bio1">
+        <button>Wishlist</button>
+        <button class="cart">Add to cart</button>
+      </div>
+    </aside>
+      <aside class="product-card2">
+      <header>
+        <a target="_blank" href="#">
+        <img src="images/shopMacBook.jpg"
+        ></a>
+        <h1>MACBOOK PRO</h1>
+        <h2>ENJOY!!</h2>
+      </header>
+      <div class="product-bio2">
+        <button>Wishlist</button>
+        <button class="cart">Add to cart</button>
+      </div>
+    </aside>
+       <aside class="product-card3">
+      <header>
+        <a target="_blank" href="#">
+        <img src="images/shopAppleWatch3.jpg"
+        ></a>
+        <h1>APPLE WATCH 3</h1>
+        <h2>ENJOY!!</h2>
+      </header>
+      <div class="product-bio3">
+        <button>Wishlist</button>
+        <button class="cart">Add to cart</button>
+      </div>
+    </aside>
+    <!-- <div> -->
+  <!-- </div> -->
+    </section>
+  </div>
+  </body>
+</html>
