@@ -2,80 +2,82 @@
 <html lang="ko">
 
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="">
-    <meta name="author" content="">
+  <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+      <meta name="description" content="">
+      <meta name="author" content="">
 
-    <!-- Bootstrap core CSS -->
-    <script src="app/assets/vendor/jquery/jquery.min.js"></script>
-    <script src="app/assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet">
-    <!-- <link href="bootstrap.min.css" rel="stylesheet"> -->
-    <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous"> -->
-    <!-- <link href="app/assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet"> -->
-    <!-- Custom styles for this template -->
-    <link href="css/simple-sidebar.css" rel="stylesheet">
-    <link href="css/photo.css" rel="stylesheet">
-    <link href="css/shop.css" rel="stylesheet">
-<!-- 제이쿼리 앵커 스크롤 -->
-    <script type="text/javascript" src="http://code.jquery.com/jquery-latest.js"></script>
+      <!-- Bootstrap core CSS -->
+      <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet">
+      <link href="css/simple-sidebar.css" rel="stylesheet">
+      <link href="css/photo.css" rel="stylesheet">
+      <link href="css/shop.css" rel="stylesheet">
+      <link href="css/timeline.css" rel="stylesheet">
+      <link rel="stylesheet" href="plugin/aos/aos.css">
+  <!-- 제이쿼리 앵커 스크롤 -->
+      <script type="text/javascript" src="http://code.jquery.com/jquery-latest.js"></script>
 
-    <script>
-        function fnMove(seq){
-            var offset = $("#div" + seq).offset();
-            $('html, body').animate({scrollTop : offset.top}, 400);
+      <script>
+          function fnMove(seq){
+              var offset = $("#div" + seq).offset();
+              $('html, body').animate({scrollTop : offset.top}, 400);
+          }
+          var animateHTML = function () {
+    var elems,
+      windowHeight
+    var init = function () {
+      elems = document.getElementsByClassName('hidden')
+      windowHeight = window.innerHeight
+      _addEventHandlers()
+    }
+    var _addEventHandlers = function () {
+      window.addEventListener('scroll', _checkPosition)
+      window.addEventListener('resize', init)
+    }
+    var _checkPosition = function () {
+      for (var i = 0; i < elems.length; i++) {
+        var posFromTop = elems[i].getBoundingClientRect().top
+        if (posFromTop - windowHeight <= 0) {
+          elems[i].className = elems[i].className.replace('hidden', 'fade-in-element')
         }
-
-        var animateHTML = function () {
-  var elems,
-    windowHeight
-  var init = function () {
-    elems = document.getElementsByClassName('hidden')
-    windowHeight = window.innerHeight
-    _addEventHandlers()
-  }
-  var _addEventHandlers = function () {
-    window.addEventListener('scroll', _checkPosition)
-    window.addEventListener('resize', init)
-  }
-  var _checkPosition = function () {
-    for (var i = 0; i < elems.length; i++) {
-      var posFromTop = elems[i].getBoundingClientRect().top
-      if (posFromTop - windowHeight <= 0) {
-        elems[i].className = elems[i].className.replace('hidden', 'fade-in-element')
       }
     }
+    return {
+      init: init
+    }
   }
-  return {
-    init: init
-  }
-}
-animateHTML().init()
+  animateHTML().init()
+        //   $('a.js-scroll-trigger[href*="#"]:not([href="#"])').click(function() {
+        //   if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
+        //     var target = $(this.hash);
+        //     target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+        //     if (target.length) {
+        //       $('html, body').animate({
+        //         scrollTop: (target.offset().top)
+        //       }, 1000, "easeInOutExpo");
+        //       return false;
+        //     }
+        //   }
+        // });
+      </script>
 
-      //   $('a.js-scroll-trigger[href*="#"]:not([href="#"])').click(function() {
-      //   if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
-      //     var target = $(this.hash);
-      //     target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
-      //     if (target.length) {
-      //       $('html, body').animate({
-      //         scrollTop: (target.offset().top)
-      //       }, 1000, "easeInOutExpo");
-      //       return false;
-      //     }
-      //   }
-      // });
-    </script>
 </head>
 
 <body>
+  <script type="text/javascript" src="plugin/aos/aos.js"></script>
+  <script type="text/javascript">
+    AOS.init({
+      duration: 1500,
+    })
+  </script>
+
     <div id="wrapper">
-        <!-- Sidebar -->
+      <!-- Sidebar -->
         <div id="sidebar-wrapper">
             <ul class="sidebar-nav">
                 <li class="sidebar-brand">
                     <a href="#">
-                        <img id ="round_img" src='images/appleLogo.jpg'alt="afds">
+                        <img id ="round_img" src='images/appleLogo2.svg'alt="afds">
                     </a>
                 </li>
                 <li>
@@ -108,27 +110,59 @@ animateHTML().init()
         </section>
 
         <section class="resume-section p-3 p-lg-5 d-flex d-column" id="div2">
-          <div class = "my-auto">
-            <h2 class = "mb-5 sub_title">EDUCATION</h2>
-              <div class="resume-item d-flex flex-column flex-md-row mb-5">
-                <div class="resume-content mr-auto">
-                  <!-- <div id="page-content-wrapper"> -->
-                    <!-- <div class="container-fluid"> -->
-                      <h1>NAMSEOUL UNIVERSITY</h1>
-                      <div class="subheading mb-3">Computer Science</div>
+          <!-- <div class = "my-auto"> -->
+          <div class="timeline">
+              <div class="container left" data-aos="fade-right">
+                <div class="content">
+                  <h2>2017</h2>
+                  <p>Lorem ipsum..</p>
                 </div>
-              <div class="resume-date text-md-right">
-                  <span class="date_color">2015.03.01 ~ ing</span>
+              </div>
+              <div class="container right" data-aos="fade-left">
+                <div class="content">
+                  <h2>2016</h2>
+                  <p>Lorem ipsum..</p>
+                </div>
+              </div>
+              <div class="container left" data-aos="fade-right">
+                <div class="content">
+                  <h2>2017</h2>
+                  <p>Lorem ipsum..</p>
+                </div>
+              </div>
+              <div class="container right" data-aos="fade-left">
+                <div class="content">
+                  <h2>2016</h2>
+                  <p>Lorem ipsum..</p>
+                </div>
+              </div>
+              <div class="container left" data-aos="fade-right">
+                <div class="content">
+                  <h2>2017</h2>
+                  <p>Lorem ipsum..</p>
+                </div>
+              </div>
+              <div class="container right" data-aos="fade-left">
+                <div class="content">
+                  <h2>2016</h2>
+                  <p>Lorem ipsum..</p>
+                </div>
+              </div>
+              <div class="container left" data-aos="fade-right">
+                <div class="content">
+                  <h2>2017</h2>
+                  <p>Lorem ipsum..</p>
+                </div>
               </div>
             </div>
-          </div>
+          <!-- </div> -->
         </section>
 
     <section class="resume-section p-3 p-lg-5 d-flex d-column" id="div3">
       <!-- <div class = "my-auto"> -->
         <!-- <div id="wrap"> -->
               <div id="photo_wrapper">
-          	    <div class="container">
+          	    <div class="photo_container">
           		    <div id="carousel1">
               			<figure><img src="images/Iphone1.jpg" alt=""></figure>
               			<figure><img src="images/Iphone2.jpg" alt=""></figure>
@@ -152,66 +186,66 @@ animateHTML().init()
                 <figure><img src="images/iMac6.jpg" alt=""></figure>
           		</div>
           		<div id="carousel3">
-          			<figure><img src="../images/19.jpg" alt=""></figure>
-          			<figure><img src="../images/20.jpg" alt=""></figure>
-          			<figure><img src="../images/21.jpg" alt=""></figure>
-          			<figure><img src="../images/22.jpg" alt=""></figure>
-          			<figure><img src="../images/23.jpg" alt=""></figure>
-          			<figure><img src="../images/24.jpg" alt=""></figure>
-          			<figure><img src="../images/25.jpg" alt=""></figure>
-          			<figure><img src="../images/26.jpg" alt=""></figure>
-          			<figure><img src="../images/27.jpg" alt=""></figure>
+          			<figure><img src="images/iPad1.jpg" alt=""></figure>
+          			<figure><img src="images/iPad2.png" alt=""></figure>
+          			<figure><img src="images/appleWatch1.jpg" alt=""></figure>
+          			<figure><img src="images/appleWatch2.png" alt=""></figure>
+          			<figure><img src="images/iPad3.jpg" alt=""></figure>
+          			<figure><img src="images/iPad4.jpg" alt=""></figure>
+          			<figure><img src="images/iPad5.jpg" alt=""></figure>
+          			<figure><img src="images/appleProduct.jpg" alt=""></figure>
+          			<figure><img src="images/homePod.jpg" alt=""></figure>
           		</div>
           	</div>
               </div>
               <!-- </div> -->
             <!-- </div> -->
           </section>
-<section class="resume-section p-3 p-lg-5 d-flex d-column hidden"  id="div4">
-  <!-- <div class = "my-auto"> -->
-      <!-- <div class = "productContainer"> -->
-    	 <aside class="product-card1">
-      <header>
-        <a target="_blank" href="#">
-        <img src="images/shopIphone.png"
-        ></a>
-        <h1>IPHONE X</h1>
-        <h2>ENJOY!!</h2>
-      </header>
-      <div class="product-bio1">
-        <button>Wishlist</button>
-        <button class="cart">Add to cart</button>
-      </div>
-    </aside>
-      <aside class="product-card2">
-      <header>
-        <a target="_blank" href="#">
-        <img src="images/shopMacBook.jpg"
-        ></a>
-        <h1>MACBOOK PRO</h1>
-        <h2>ENJOY!!</h2>
-      </header>
-      <div class="product-bio2">
-        <button>Wishlist</button>
-        <button class="cart">Add to cart</button>
-      </div>
-    </aside>
-       <aside class="product-card3">
-      <header>
-        <a target="_blank" href="#">
-        <img src="images/shopAppleWatch3.jpg"
-        ></a>
-        <h1>APPLE WATCH 3</h1>
-        <h2>ENJOY!!</h2>
-      </header>
-      <div class="product-bio3">
-        <button>Wishlist</button>
-        <button class="cart">Add to cart</button>
-      </div>
-    </aside>
-    <!-- <div> -->
-  <!-- </div> -->
-    </section>
-  </div>
+          <section class="resume-section p-3 p-lg-5 d-flex d-column hidden"  id="div4">
+            <!-- <div class = "my-auto"> -->
+                <!-- <div class = "productContainer"> -->
+              	 <aside class="product-card1">
+                <header data-aos="flip-left">
+                  <a target="_blank" href="#">
+                  <img src="images/shopIphone.png"
+                  ></a>
+                  <h1>IPHONE X</h1>
+                  <h2>ENJOY!!</h2>
+                </header>
+                <div class="product-bio1">
+                  <button>Wishlist</button>
+                  <button class="cart">Add to cart</button>
+                </div>
+              </aside>
+                <aside class="product-card2">
+                <header data-aos="flip-up">
+                  <a target="_blank" href="#">
+                  <img src="images/shopMacBook.jpg"
+                  ></a>
+                  <h1>MACBOOK PRO</h1>
+                  <h2>ENJOY!!</h2>
+                </header>
+                <div class="product-bio2">
+                  <button>Wishlist</button>
+                  <button class="cart">Add to cart</button>
+                </div>
+              </aside>
+                 <aside class="product-card3">
+                <header data-aos="flip-right">
+                  <a target="_blank" href="#">
+                  <img src="images/shopAppleWatch3.jpg"
+                  ></a>
+                  <h1>APPLE WATCH 3</h1>
+                  <h2>ENJOY!!</h2>
+                </header>
+                <div class="product-bio3">
+                  <button>Wishlist</button>
+                  <button class="cart">Add to cart</button>
+                </div>
+              </aside>
+              <!-- <div> -->
+            <!-- </div> -->
+              </section>
+            </div>
   </body>
 </html>
