@@ -77,7 +77,7 @@
             <ul class="sidebar-nav">
                 <li class="sidebar-brand">
                     <a href="#">
-                        <img id ="round_img" src='images/appleLogo2.svg'alt="afds">
+                        <img id ="round_img" src='images/appleLogo2.svg'alt="afds" class="photo" >
                     </a>
                 </li>
                 <li>
@@ -85,73 +85,98 @@
                     <!-- <button onclick="fnMove('1')">div1로 이동</button> -->
                 </li>
                 <li>
-                    <a href="javascript:void(0)" onclick="fnMove('2')"  >INTRODUCE</a>
+                    <a href="javascript:void(0)" onclick="fnMove('2')"  >HISTORY</a>
                 </li>
                 <li>
                     <a href="javascript:void(0)" onclick="fnMove('3')" >GALLERY</a>
                 </li>
                 <li>
-                    <a href="javascript:void(0)" onclick="fnMove('4')" >Product</a>
+                    <a href="javascript:void(0)" onclick="fnMove('4')" >PRODUCT</a>
                 </li>
             </ul>
         </div>
         <!-- /#sidebar-wrapper -->
         <div class="container-fluid p-0">
         <!-- Page Content -->
-        <section class="resume-section p-3 p-lg-5 d-flex d-column" id="div1">
+        <section class="resume-section col-lg-12 p-3 p-lg-5 d-flex d-column" id="div1">
           <div class = "my-auto">
-            <!-- <div id="page-content-wrapper"> -->
-                <!-- <div class="container-fluid"> -->
-              <div class="subInfo">
-                    <!-- <a href="#menu-toggle" class="btn btn-secondary" id="menu-toggle">Toggle Menu</a> -->
-                <!-- </div> -->
-              </div>
+            <div class = "title" data-aos = "fade-left">
+              APPLE
+            </div>
           </div>
         </section>
 
         <section class="resume-section p-3 p-lg-5 d-flex d-column" id="div2">
           <!-- <div class = "my-auto"> -->
-          <div class="timeline">
+          <div class="timeline col-lg-12">
               <div class="container left" data-aos="fade-right">
                 <div class="content">
-                  <h2>2017</h2>
-                  <p>Lorem ipsum..</p>
+                  <img src="images/apple2.jpg" alt="">
+                    <div class="history_container">
+                      <h2 class="history_Year">1977</h2><br>
+                      <h3 class="history_Name">Apple2</h3><br>
+                      <p class="history_content">최초의 일체형 컴퓨터</p>
+                    </div>
                 </div>
               </div>
               <div class="container right" data-aos="fade-left">
                 <div class="content">
-                  <h2>2016</h2>
-                  <p>Lorem ipsum..</p>
+                  <img src="images/macintosh.jpg" alt="">
+                  <div class="history_container">
+                    <h2 class="history_Year">1984</h2><br>
+                    <h3 class="history_Name">Macintosh</h3><br>
+                    <p class="history_content">최초의 개인용 컴퓨터</p>
+                  </div>
                 </div>
               </div>
               <div class="container left" data-aos="fade-right">
                 <div class="content">
-                  <h2>2017</h2>
-                  <p>Lorem ipsum..</p>
+                  <img src="images/LaswerWriter.jpg" alt="">
+                  <div class="history_container">
+                    <h2 class="history_Year">1985</h2><br>
+                    <h3 class="history_Name">LaswerWriter</h3><br>
+                    <p class="history_content">포스트스크립트 인터프리터</p>
+                  </div>
                 </div>
               </div>
               <div class="container right" data-aos="fade-left">
                 <div class="content">
-                  <h2>2016</h2>
-                  <p>Lorem ipsum..</p>
+                  <img src="images/iPod.jpg" alt="">
+                  <div class="history_container">
+                    <h2 class="history_Year">2001</h2><br>
+                    <h3 class="history_Name">IPod</h3><br>
+                    <p class="history_content">최초의 애플사의 MP3플레이어</p>
+                  </div>
                 </div>
               </div>
               <div class="container left" data-aos="fade-right">
                 <div class="content">
-                  <h2>2017</h2>
-                  <p>Lorem ipsum..</p>
+                  <img src="images/iTunes.jpg" alt="">
+                  <div class="history_container">
+                    <h2 class="history_Year">2003</h2><br>
+                    <h3 class="history_Name">ITunes Store</h3><br>
+                    <p class="history_content">온라인 음악 서비스 시작</p>
+                  </div>
                 </div>
               </div>
               <div class="container right" data-aos="fade-left">
                 <div class="content">
-                  <h2>2016</h2>
-                  <p>Lorem ipsum..</p>
+                  <img src="images/iPhone.jpg" alt="">
+                  <div class="history_container">
+                    <h2 class="history_Year">2007</h2><br>
+                    <h3 class="history_Name">IPhone</h3><br>
+                    <p class="history_content">애플의 첫번째 스마트폰</p>
+                  </div>
                 </div>
               </div>
               <div class="container left" data-aos="fade-right">
                 <div class="content">
-                  <h2>2017</h2>
-                  <p>Lorem ipsum..</p>
+                  <img src="images/iPad.png" alt="">
+                  <div class="history_container">
+                    <h2 class="history_Year">2010</h2><br>
+                    <h3 class="history_Name">IPad</h3><br>
+                    <p class="history_content">애플의 첫번째 태블릿PC</p>
+                  </div>
                 </div>
               </div>
             </div>
@@ -161,40 +186,40 @@
     <section class="resume-section p-3 p-lg-5 d-flex d-column" id="div3">
       <!-- <div class = "my-auto"> -->
         <!-- <div id="wrap"> -->
-              <div id="photo_wrapper">
+              <div id="photo_wrapper" class="col-lg-12" data-aos="fade-up">
           	    <div class="photo_container">
-          		    <div id="carousel1">
-              			<figure><img src="images/Iphone1.jpg" alt=""></figure>
-              			<figure><img src="images/Iphone2.jpg" alt=""></figure>
-              			<figure><img src="images/Iphone3.png" alt=""></figure>
-              			<figure><img src="images/Iphone4.png" alt=""></figure>
-              			<figure><img src="images/Iphone5.png" alt=""></figure>
-              			<figure><img src="images/Iphone6.png" alt=""></figure>
-              			<figure><img src="images/Iphone7.jpeg" alt=""></figure>
-              			<figure><img src="images/Iphone8.jpg" alt=""></figure>
-              			<figure><img src="images/Iphone9.jpg" alt=""></figure>
+          		    <div id="carousel1" >
+              			<figure><img src="images/Iphone1.jpg" alt="" class="photo"></figure>
+              			<figure><img src="images/Iphone2.jpg" alt="" class="photo"></figure>
+              			<figure><img src="images/Iphone3.png" alt="" class="photo"></figure>
+              			<figure><img src="images/Iphone4.png" alt="" class="photo"></figure>
+              			<figure><img src="images/Iphone5.png" alt="" class="photo"></figure>
+              			<figure><img src="images/Iphone6.png" alt="" class="photo"></figure>
+              			<figure><img src="images/Iphone7.jpeg" alt="" class="photo"></figure>
+              			<figure><img src="images/Iphone8.jpg" alt="" class="photo"></figure>
+              			<figure><img src="images/Iphone9.jpg" alt="" class="photo"></figure>
               		</div>
           		<div id="carousel2">
-                <figure><img src="images/macBook1.jpg" alt=""></figure>
-                <figure><img src="images/macBook10.jpg" alt=""></figure>
-                <figure><img src="images/macBook3.jpg" alt=""></figure>
-                <figure><img src="images/iMac4.jpg" alt=""></figure>
-                <figure><img src="images/iMac2.png" alt=""></figure>
-                <figure><img src="images/iMac3.jpeg" alt=""></figure>
-                <figure><img src="images/macBook8.jpg" alt=""></figure>
-                <figure><img src="images/macBook9.jpg" alt=""></figure>
-                <figure><img src="images/iMac6.jpg" alt=""></figure>
+                <figure><img src="images/macBook1.jpg" alt="" class="photo"></figure>
+                <figure><img src="images/macBook10.jpg" alt="" class="photo"></figure>
+                <figure><img src="images/macBook3.jpg" alt="" class="photo"></figure>
+                <figure><img src="images/iMac4.jpg" alt="" class="photo"></figure>
+                <figure><img src="images/iMac2.png" alt="" class="photo"></figure>
+                <figure><img src="images/iMac3.jpeg" alt="" class="photo"></figure>
+                <figure><img src="images/macBook8.jpg" alt="" class="photo"></figure>
+                <figure><img src="images/macBook9.jpg" alt="" class="photo"></figure>
+                <figure><img src="images/iMac6.jpg" alt="" class="photo"></figure>
           		</div>
           		<div id="carousel3">
-          			<figure><img src="images/iPad1.jpg" alt=""></figure>
-          			<figure><img src="images/iPad2.png" alt=""></figure>
-          			<figure><img src="images/appleWatch1.jpg" alt=""></figure>
-          			<figure><img src="images/appleWatch2.png" alt=""></figure>
-          			<figure><img src="images/iPad3.jpg" alt=""></figure>
-          			<figure><img src="images/iPad4.jpg" alt=""></figure>
-          			<figure><img src="images/iPad5.jpg" alt=""></figure>
-          			<figure><img src="images/appleProduct.jpg" alt=""></figure>
-          			<figure><img src="images/homePod.jpg" alt=""></figure>
+          			<figure><img src="images/iPad1.jpg" alt="" class="photo"></figure>
+          			<figure><img src="images/iPad2.png" alt="" class="photo"></figure>
+          			<figure><img src="images/appleWatch1.jpg" alt="" class="photo"></figure>
+          			<figure><img src="images/appleWatch2.png" alt="" class="photo"></figure>
+          			<figure><img src="images/iPad3.jpg" alt="" class="photo"></figure>
+          			<figure><img src="images/iPad4.jpg" alt="" class="photo"></figure>
+          			<figure><img src="images/iPad5.jpg" alt="" class="photo"></figure>
+          			<figure><img src="images/appleProduct.jpg" alt="" class="photo"></figure>
+          			<figure><img src="images/homePod.jpg" alt="" class="photo"></figure>
           		</div>
           	</div>
               </div>
@@ -203,47 +228,69 @@
           </section>
           <section class="resume-section p-3 p-lg-5 d-flex d-column hidden"  id="div4">
             <!-- <div class = "my-auto"> -->
-                <!-- <div class = "productContainer"> -->
+                <div class = "productContainer col-lg-12">
               	 <aside class="product-card1">
                 <header data-aos="flip-left">
                   <a target="_blank" href="#">
                   <img src="images/shopIphone.png"
-                  ></a>
+                  class="photo"></a>
                   <h1>IPHONE X</h1>
                   <h2>ENJOY!!</h2>
                 </header>
                 <div class="product-bio1">
+                  <a href="https://www.apple.com/kr/iphone/">
                   <button>Wishlist</button>
                   <button class="cart">Add to cart</button>
+                  </a>
                 </div>
               </aside>
                 <aside class="product-card2">
                 <header data-aos="flip-up">
                   <a target="_blank" href="#">
                   <img src="images/shopMacBook.jpg"
-                  ></a>
+                  class="photo"></a>
                   <h1>MACBOOK PRO</h1>
                   <h2>ENJOY!!</h2>
                 </header>
                 <div class="product-bio2">
+                  <a href="https://www.apple.com/kr/macbook-pro/">
                   <button>Wishlist</button>
                   <button class="cart">Add to cart</button>
+                  </a>
                 </div>
               </aside>
                  <aside class="product-card3">
                 <header data-aos="flip-right">
                   <a target="_blank" href="#">
                   <img src="images/shopAppleWatch3.jpg"
-                  ></a>
+                  class="photo"></a>
                   <h1>APPLE WATCH 3</h1>
                   <h2>ENJOY!!</h2>
                 </header>
                 <div class="product-bio3">
+                  <a href="https://www.apple.com/kr/watch/">
                   <button>Wishlist</button>
                   <button class="cart">Add to cart</button>
+                  </a>
                 </div>
               </aside>
-              <!-- <div> -->
+
+              <aside class="product-card3">
+             <header data-aos="flip-right">
+               <a target="_blank" href="#">
+               <img src="images/shopIpad.png"
+               class="photo"></a>
+               <h1>IPAD PRO</h1>
+               <h2>ENJOY!!</h2>
+             </header>
+             <div class="product-bio3">
+               <a href="https://www.apple.com/kr/ipad/">
+               <button>Wishlist</button>
+               <button class="cart">Add to cart</button>
+               </a>
+             </div>
+           </aside>
+            </div>
             <!-- </div> -->
               </section>
             </div>

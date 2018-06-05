@@ -9,14 +9,18 @@
 .productContainer{
   height: 100%;
   width: 100%;
+  top:80px;
+  vertical-align:middle;
+  text-align: center;
+  /* margin-left: 10px; */
 }
 
 aside{
-	margin-top: 100px;
-
+	margin-top: 200px;
 }
 
 .product-card1 {
+  display: inline-block;
   background: darkred;
   width: 540px;
   height: 156px;
@@ -29,7 +33,7 @@ aside{
   margin-top: 70px;
 	margin-left: 0px;
   margin-right: 0px;
-  transform: translate(50%, 30%);
+  transform: translate(10%, 30%);
   border-radius: 50%;
   box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.16), 0px 3px 6px rgba(0, 0, 0, 0.23);
   animation: init 1.5s 0.2s cubic-bezier(0.55, 0.055, 0.275, 0.19) forwards, materia 0.5s .9s cubic-bezier(0.86, 0, 0.07, 1) forwards;
@@ -68,6 +72,7 @@ aside{
 
 
 .product-card2 {
+  display: inline-block;
   background: darkred;
   width: 540px;
   height: 156px;
@@ -79,12 +84,13 @@ aside{
   opacity: 0;
   margin-top: 70px;
 	margin-left: 0px;
-  transform: translate(50%, 30%);
+  transform: translate(10%, 30%);
   border-radius: 50%;
   box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.16), 0px 3px 6px rgba(0, 0, 0, 0.23);
   animation: init 1.5s 0.2s cubic-bezier(0.55, 0.055, 0.275, 0.19) forwards, materia 0.5s .9s cubic-bezier(0.86, 0, 0.07, 1) forwards;
 }
 .product-card2 header {
+  display: inline-block;
   width: 230px;
   height: 500px;
   padding: 0px;
@@ -146,7 +152,7 @@ aside{
 
 button {
     margin-top: 25px;
-    margin-left: 25px;
+    margin-left: 10px;
     width: auto;
     border: 1px solid darkred;
     background: #fff;
@@ -178,6 +184,7 @@ button:hover{
 }
 
 .product-card3 {
+  display: inline-block;
   background: darkred;
   width: 540px;
   height: 156px;
@@ -189,7 +196,7 @@ button:hover{
   opacity: 0;
   margin-top: 70px;
 	margin-left: 0px;
-  transform: translate(50%, 30%);
+  transform: translate(10%, 30%);
   border-radius: 50%;
   box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.16), 0px 3px 6px rgba(0, 0, 0, 0.23);
   animation: init 1.5s 0.2s cubic-bezier(0.55, 0.055, 0.275, 0.19) forwards, materia 0.5s .9s cubic-bezier(0.86, 0, 0.07, 1) forwards;
