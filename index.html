@@ -16,51 +16,7 @@
       <link rel="stylesheet" href="plugin/aos/aos.css">
   <!-- 제이쿼리 앵커 스크롤 -->
       <script type="text/javascript" src="http://code.jquery.com/jquery-latest.js"></script>
-
-      <script>
-          function fnMove(seq){
-              var offset = $("#div" + seq).offset();
-              $('html, body').animate({scrollTop : offset.top}, 400);
-          }
-          var animateHTML = function () {
-    var elems,
-      windowHeight
-    var init = function () {
-      elems = document.getElementsByClassName('hidden')
-      windowHeight = window.innerHeight
-      _addEventHandlers()
-    }
-    var _addEventHandlers = function () {
-      window.addEventListener('scroll', _checkPosition)
-      window.addEventListener('resize', init)
-    }
-    var _checkPosition = function () {
-      for (var i = 0; i < elems.length; i++) {
-        var posFromTop = elems[i].getBoundingClientRect().top
-        if (posFromTop - windowHeight <= 0) {
-          elems[i].className = elems[i].className.replace('hidden', 'fade-in-element')
-        }
-      }
-    }
-    return {
-      init: init
-    }
-  }
-  animateHTML().init()
-        //   $('a.js-scroll-trigger[href*="#"]:not([href="#"])').click(function() {
-        //   if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
-        //     var target = $(this.hash);
-        //     target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
-        //     if (target.length) {
-        //       $('html, body').animate({
-        //         scrollTop: (target.offset().top)
-        //       }, 1000, "easeInOutExpo");
-        //       return false;
-        //     }
-        //   }
-        // });
-      </script>
-
+      <script type="text/javascript" src="js/scroll.js"></script>
 </head>
 
 <body>
@@ -92,7 +48,7 @@
                 </li>
                 <li>
                   <!-- javascript:void(0) -->
-                    <a href="#div3" onclick="fnMove('4')" >PRODUCT</a>
+                    <a href="#div4" onclick="fnMove('4')" >PRODUCT</a>
                 </li>
             </ul>
         </div>
