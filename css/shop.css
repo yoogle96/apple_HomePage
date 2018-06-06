@@ -2,21 +2,21 @@
   font-size: 25px
 } */
 
-.hidden{
+.hidden {
   opacity: 0;
 }
 
-.productContainer{
+.productContainer {
   height: 100%;
   width: 100%;
-  top:80px;
-  vertical-align:middle;
+  top: 80px;
+  vertical-align: middle;
   text-align: center;
   /* margin-left: 10px; */
 }
 
-aside{
-	margin-top: 200px;
+aside {
+  margin-top: 200px;
 }
 
 .product-card1 {
@@ -31,7 +31,7 @@ aside{
   overflow: hidden;
   opacity: 0;
   margin-top: 70px;
-	margin-left: 0px;
+  margin-left: 0px;
   margin-right: 0px;
   transform: translate(10%, 30%);
   border-radius: 50%;
@@ -66,10 +66,9 @@ aside{
   margin: 30px 20px;
 }
 
-.product-card1 header a > img {
+.product-card1 header a>img {
   max-width: 100%;
 }
-
 
 .product-card2 {
   display: inline-block;
@@ -83,12 +82,13 @@ aside{
   overflow: hidden;
   opacity: 0;
   margin-top: 70px;
-	margin-left: 0px;
+  margin-left: 0px;
   transform: translate(10%, 30%);
   border-radius: 50%;
   box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.16), 0px 3px 6px rgba(0, 0, 0, 0.23);
   animation: init 1.5s 0.2s cubic-bezier(0.55, 0.055, 0.275, 0.19) forwards, materia 0.5s .9s cubic-bezier(0.86, 0, 0.07, 1) forwards;
 }
+
 .product-card2 header {
   display: inline-block;
   width: 230px;
@@ -117,10 +117,12 @@ aside{
   margin: 30px 20px;
 }
 
-.product-card2 header a > img {
+.product-card2 header a>img {
   max-width: 100%;
 }
+
 /* 상품 가격 표시 */
+
 /* .product-card1 header a:after {
   position: absolute;
   content: "$500";
@@ -136,6 +138,7 @@ aside{
 } */
 
 /* 상품 가격 표시 */
+
 /* .product-card2 header a:after {
   position: relative;
   content: "$500";
@@ -151,25 +154,24 @@ aside{
 } */
 
 button {
-    margin-top: 25px;
-    margin-left: 10px;
-    width: auto;
-    border: 1px solid darkred;
-    background: #fff;
-    /* padding: 10px 30px; */
-    color: darkred;
-    border-radius: 50px;
-    cursor: pointer;
-    text-transform: uppercase;
+  margin-top: 25px;
+  margin-left: 10px;
+  width: auto;
+  border: 1px solid darkred;
+  background: #fff;
+  /* padding: 10px 30px; */
+  color: darkred;
+  border-radius: 50px;
+  cursor: pointer;
+  text-transform: uppercase;
 }
 
-button:hover{
+button:hover {
   background: darkred;
   color: white;
-
 }
 
-.product-card1 .product-bio1 .product-card2 .product-bio2 .product-card3 .product-bio3{
+.product-card1 .product-bio1 .product-card2 .product-bio2 .product-card3 .product-bio3 {
   width: 165px;
   height: 180px;
   display: inline-block;
@@ -195,12 +197,13 @@ button:hover{
   overflow: hidden;
   opacity: 0;
   margin-top: 70px;
-	margin-left: 0px;
+  margin-left: 0px;
   transform: translate(10%, 30%);
   border-radius: 50%;
   box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.16), 0px 3px 6px rgba(0, 0, 0, 0.23);
   animation: init 1.5s 0.2s cubic-bezier(0.55, 0.055, 0.275, 0.19) forwards, materia 0.5s .9s cubic-bezier(0.86, 0, 0.07, 1) forwards;
 }
+
 .product-card3 header {
   width: 230px;
   height: 500px;
@@ -228,11 +231,12 @@ button:hover{
   margin: 30px 20px;
 }
 
-.product-card3 header a > img {
+.product-card3 header a>img {
   max-width: 100%;
 }
 
 /* 상품 가격 표시  */
+
 /* .product-card3 header a:after {
   position: absolute;
   bottom: 3px;
@@ -327,7 +331,7 @@ button:hover{
     float: none;
     border-right: none;
   }
-	.product-card2 header {
+  .product-card2 header {
     width: auto;
     height: auto;
     padding: 20px 35px;
@@ -335,8 +339,7 @@ button:hover{
     float: none;
     border-right: none;
   }
-
-	.product-card3 header {
+  .product-card3 header {
     width: auto;
     height: auto;
     padding: 20px 35px;
@@ -344,16 +347,13 @@ button:hover{
     float: none;
     border-right: none;
   }
-
-  .product-card1 .product-bio1 .product-card2 .product-bio2 .product-card3 .product-bio3{
+  .product-card1 .product-bio1 .product-card2 .product-bio2 .product-card3 .product-bio3 {
     width: auto;
     height: auto;
     padding: 10px 20px 30px 20px;
     display: block;
     float: none;
   }
-
-
   @keyframes materia {
     0% {
       background: #E0E0E0;
